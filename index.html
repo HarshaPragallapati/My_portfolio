@@ -264,10 +264,10 @@
         </p>
         <p>
           <ul>
-            <li><b>Languages:</b> Python, Java, C, C++, HTML, CSS, JavaScript</li>
+            <li><b>Languages:</b> Java, Python, C, C++, HTML, CSS, JavaScript</li>
             <li><b>Databases:</b> MySQL</li>
             <li><b>Libraries:</b> NumPy, Pandas</li>
-            <li><b>Frameworks:</b> Node.js, Flask</li>
+            <li><b>Frameworks:</b> Node.js</li>
             <li><b>Tools & Technologies:</b> Git, AWS</li>
           </ul>
           
@@ -349,7 +349,7 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text teal">Projects</h3>
       <div class="container">
-        <div class="row">
+        <div class="row project_me">
 
           <div class="col s12 m6 l4">
             <div class="card medium">
@@ -360,7 +360,7 @@
                 <span class="card-title activator teal-text hoverline">MatchMart<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A music streaming web app based on Flask
+                  A online search web app based on Flask
                 </p>
               </div>
               <div class="card-reveal">
@@ -369,24 +369,24 @@
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
+                  <li><b>Tools:</b> Flask, HTML, CSS, Bootstrap</li>
+                  <li>Created a search functionality for items via text or
+                    image, streamlining user experience in finding
+                    products.
+                    </li>
+                  <li>Designed a vendor response system where vendors
+                    provide real-time availability and pricing.</li>
+                  <li>Integrated an order ID system for secure and
+                    effcient purchasing, enhancing transaction
+                    tracking and user trust.</li>
+                    <li>Implemented backend logic to handle user queries,
+                      vendor notications, and real-time data updates
+                      for accurate inventory and pricing.
+                      </li>
 
 
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -394,13 +394,13 @@
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="/assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
+                <img alt="quiz app" src="/assets/img/diamond.jpeg" style="height: 100%; width: 100%" class="activator" />
               </div>
               <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
+                <span class="card-title activator teal-text hoverline">Diamond Price Prediction<i
                     class="mdi-navigation-more-vert right"></i></span>
                 <p>
-                  A quiz playing web app based on Django
+                  A machine learning model to predict diamond price.
                 </p>
               </div>
               <div class="card-reveal">
@@ -409,21 +409,13 @@
                 <span class="card-title grey-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
                 <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Play Quiz and see the leaderboard</li>
-
+                  <li><b>Tools:</b> Python, Scikit-learn, XGBoost, Matplotlib, Seaborn
+                  </li>
+                  <li>Implemented Random Forest and XGBoost models, achieving an R² of 98.5%, showcasing their effectiveness in capturing non-linear interactions between features.</li>
+                  <li>Designed an intuitive prediction interface, allowing users to input diamond attributes and receive instant price estimates.</li>
+                  <li>Highlighted the impact of carat weight, cut quality, color, and clarity on pricing, providing actionable insights for stakeholders.</li>
                 </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -466,44 +458,7 @@
           </div> -->
 
           <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="/assets/img/project-blog-logo.jpg"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Blog Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A simple and extensible blog web-app based on Flask.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           
           <!-- ************* -->
@@ -525,12 +480,6 @@
               </div>
               <div class="col s4 m2">
                 <img alt="" src="/assets/img/java_new_logo.jpg" class="responsive-img" />Java
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML
-              </div>
-              <div class="col s4 m2">
-                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS
               </div>
               <div class="col s4 m2">
                 <img alt="" src="/assets/img/mysql-logo-1-300x300.jpg" class="responsive-img" />MySQL
@@ -556,10 +505,19 @@
         <!-- Frameworks -->
         <div class="card">
           <div class="card-content">
-            <h4 class="brown-text light">Frameworks</h4>
+            <h4 class="brown-text light">Web Technologies</h4>
             <div class="row text-center">
               <div class="col s4 m2">
-                <img alt="" src="/assets/img/flask-logo.png" class="responsive-img" />Flask
+                <img alt="" src="/assets/img/html5-300x300.jpg" class="responsive-img" />HTML
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/css3-300x300.jpg" class="responsive-img" />CSS
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/javascript.png" class="responsive-img" />JavaScript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="/assets/img/nodejs.png" class="responsive-img" />Node.js
               </div>
               <div class="col s4 m2">
                 <img alt="" src="/assets/img/bootstrap.png" class="responsive-img" />Bootstrap
