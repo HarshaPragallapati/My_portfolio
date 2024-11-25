@@ -147,7 +147,7 @@
         <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Harsha's resume in a new tab" href="https://varadbhogayata.github.io/assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank"
+        <a aria-label="Open Harsha's resume in a new tab" href="/assets/resume/HarshaPragallapatiResume.pdf" target="_blank"
         class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
       </li>
     </ul>
@@ -194,7 +194,7 @@
       </li>
       <li class="bold">
         <a aria-label="Open Harsha's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
+          href="/assets/resume/HarshaPragallapatiResume.pdf" target="_blank"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
       </li>
     </ul>
@@ -650,31 +650,57 @@
     <section id="contact" class="section scrollspy full-height">
       <h3 class="page-title white-text teal">Contact</h3>
       <div class="container">
-        <p>
-          <a aria-label="Call Harsha" data-position="top" data-tooltip="Call Harsha"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
-              aria-label="Call Harsha">+91-9849105962</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Harsha" href="mailto:harshapragallapati2005@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Harsha" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-envelope"></i><a aria-label="Email Harsha" href="mailto:harshapragallapati2005@gmail.com"
-              class="hoverline">harshapragallapati2005@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Harsha on GitHub" href="https://github.com/HarshaPragallapati" target="_blank"
-            data-position="top" data-tooltip="View Harsha on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
-              aria-label="Harsha on Github" href="https://github.com/HarshaPragallapati" class="hoverline"
-              target="_blank">github.com/HarshaPragallapati</a></a>
-        </p>
-        <p>
-          <a aria-label="View Harsha on LinkedIn" href="https://www.linkedin.com/in/harsha-pragallapati-16a61b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
-            data-position="top" data-tooltip="View Harsha on LinkedIn"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-              class="fa fa-linkedin"></i><a aria-label="Harsha on LinkedIn" href="https://www.linkedin.com/in/harsha-pragallapati-16a61b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              class="hoverline" target="_blank">linkedin.com/in/harsha-pragallapati</a></a>
-        </p>
+        <div class="row">
+          <!-- Left Column: Existing Contact Details -->
+          <div class="col s12 m6">
+            <p>
+              <a aria-label="Call Harsha" data-position="top" data-tooltip="Call Harsha"
+                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i></a>
+              <a aria-label="Call Harsha">+91-9849105962</a>
+            </p>
+            <p>
+              <a aria-label="Email Harsha" href="mailto:harshapragallapati2005@gmail.com" target="_blank" data-position="top"
+                data-tooltip="Email Harsha" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                  class="fa fa-envelope"></i></a>
+              <a aria-label="Email Harsha" href="mailto:harshapragallapati2005@gmail.com" class="hoverline">harshapragallapati2005@gmail.com</a>
+            </p>
+            <p>
+              <a aria-label="View Harsha on GitHub" href="https://github.com/HarshaPragallapati" target="_blank"
+                data-position="top" data-tooltip="View Harsha on GitHub"
+                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+              <a aria-label="Harsha on Github" href="https://github.com/HarshaPragallapati" class="hoverline"
+                target="_blank">github.com/HarshaPragallapati</a>
+            </p>
+            <p>
+              <a aria-label="View Harsha on LinkedIn" href="https://www.linkedin.com/in/harsha-pragallapati-16a61b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"
+                data-position="top" data-tooltip="View Harsha on LinkedIn"
+                class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-linkedin"></i></a>
+              <a aria-label="Harsha on LinkedIn" href="https://www.linkedin.com/in/harsha-pragallapati-16a61b324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="hoverline" target="_blank">linkedin.com/in/harsha-pragallapati</a>
+            </p>
+          </div>
+          
+          <!-- Right Column: Contact Form -->
+          <div class="col s12 m6">
+            <form action="submit_form.php" method="POST">
+              <div class="input-field">
+                <input id="name" name="name" type="text" required>
+                <label for="name">Full Name</label>
+              </div>
+              <div class="input-field">
+                <input id="email" name="email" type="email" required>
+                <label for="email">Email Address</label>
+              </div>  
+              <div class="input-field">
+                <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+                <label for="message">Message</label>
+              </div>
+              <div class="contact_button">
+                <button type="submit" class="btn waves-effect waves-light teal">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
